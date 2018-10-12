@@ -6,13 +6,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  escrevendoFixo(13,12,500);
-  escrevendoBlink(13,12,1500);
+  piscandoJuntos(13,12,500);
+  piscandoSeparados(13,12,1500);
   
   
 }
 
-void escrevendoFixo(int pino1,int pino2, int time){
+void piscandoJuntos(int pino1,int pino2, int time){
   digitalWrite(pino1,HIGH);
   digitalWrite(pino2,HIGH);
   delay(time);
@@ -21,7 +21,7 @@ void escrevendoFixo(int pino1,int pino2, int time){
   delay(time);
 }
 
-void escrevendoBlink(int pino1,int pino2, int time){
+void piscandoSeparados(int pino1,int pino2, int time){
   digitalWrite(pino1,HIGH);
   delay(time);  
   digitalWrite(pino2,HIGH);
